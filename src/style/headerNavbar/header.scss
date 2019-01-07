@@ -3,4 +3,10 @@
     grid-row: header-s/header-e;
     grid-column: s/e;
     justify-content: center;
+
+    &__image {
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }

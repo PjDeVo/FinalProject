@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import history from '../../history';
 
 class Navbar extends Component {
   render() {
@@ -6,7 +7,7 @@ class Navbar extends Component {
     return (
       <div className={`${className} navbar`}>
         <div className="navbar-links">
-          <a className="navbar-link__meet">Meet The Instructors </a>
+          <a onClick ={() => history.push('./meet-the-instructors')} className="navbar-link__meet" >Meet The Instructors </a>
           <a className="navbar-link__classes"> Classes </a>
           <a className="navbar-link__kids"> Kids Program </a>
           <a className="navbar-link__schedule"> Schedule </a>

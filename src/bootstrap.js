@@ -12,6 +12,7 @@ import "./style/main.scss";
 import Layout from "./components/Layout";
 import history from './history';
 import Home from './components/Home';
+import Instructors from './components/instructors';
 
 function main() {
   ReactDOM.render(
@@ -19,7 +20,8 @@ function main() {
       <Router history={history}>
         <Layout>
           <Switch>
-            <Route path = '/' component = {Home}/>
+            <Route path ='/' exact component = {Home}/>
+            <Route path ='/meet-the-instructors' exact component = {Instructors}/>
           </Switch>
         </Layout>
       </Router>

@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 class Home extends Component {
     render() {
         return(
-            <div>
-                This is the Home Component
+            <div className = 'home'>
+                <h1> this is the home component</h1>
             </div>
         )
     }
