@@ -1,0 +1,19 @@
+.layout {
+
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+
+    grid-template-rows: [header-s]100px [header-e navbar-s ] 50px [navbar-e content-s ] 1fr [content-e footer-s] 50px [footer-e];
+    grid-template-columns: [s]1fr [e];
+}
+
+.navbar {
+    display: grid;
+    grid-row: navbar-s/navbar-e;
+    grid-column: s/e;
+}
+
+.header {
+    
+}
