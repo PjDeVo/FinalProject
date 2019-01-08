@@ -1,10 +1,11 @@
 .home-form {
   display: grid;
-  grid-template-rows: [title-s]1fr [title-e content-s] 1fr [content-e];
+  grid-template-rows: [title-s]200px [title-e content-s] 1fr [content-e];
   grid-template-columns: [image-s] 1fr [image-e title-s] 1fr [title-e text-s] 1fr [text-e];
 
 
   &__title {
+  
     display: grid;
     width: 450px;
     margin-top: 30px;
