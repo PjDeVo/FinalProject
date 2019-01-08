@@ -1,0 +1,26 @@
+.home-form {
+  display: grid;
+  grid-template-rows: [title-s]1fr [title-e content-s] 1fr [content-e];
+  grid-template-columns: [image-s] 1fr [image-e title-s] 1fr [title-e text-s] 1fr [text-e];
+
+
+  &__title {
+    display: grid;
+    width: 450px;
+    margin-top: 30px;
+    font-size: 50px;
+    color: #ffdb4d;
+    grid-row: title-s/title-e;
+    grid-column: title-s/title-e;
+    justify-content: center;
+  }
+  &__image {
+    grid-row: content-s/content-s;
+    grid-column: image-s/image-e;
+  }
+
+  &__content {
+    grid-row: content-s/content-e;
+    grid-column: text-s/text-e;
+  }
+}

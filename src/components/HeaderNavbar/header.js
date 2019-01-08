@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return(
             <div className = 'header'>
-                <img className = 'header__image' onClick ={()=> history.push('./')} src = 'http://via.placeholder.com/100x100'/>
+                <img className = 'header__image' onClick ={()=> history.push('./')} src = '../../../src/style/images/Grindhouse/jerry.jpg'/>
             </div> 
             
         )
@@ -13,3 +13,4 @@ class Header extends Component {
 }
 
 export default Header;
+

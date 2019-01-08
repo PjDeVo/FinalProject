@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./style/main.scss";
 import Layout from "./components/Layout";
 import history from './history';
-import Home from './components/Home';
+import Home from './components/Home/home';
 import Instructors from './components/instructors';
 
 function main() {

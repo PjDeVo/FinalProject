@@ -5,7 +5,7 @@
     display: grid;
 
     grid-template-rows: [header-s]100px [header-e navbar-s ] 50px [navbar-e content-s ] 1fr [content-e footer-s] 50px [footer-e];
-    grid-template-columns: [s]1fr [e];
+    grid-template-columns: 250px[s]1fr [e] 250px;
 }
 
 
