@@ -49,9 +49,7 @@ class Instructors extends Component {
                     <div>
                     <img src = 'http://via.placeholder.com/200x200'/>
                     </div> 
-                    <div>
-                    <img src = 'http://via.placeholder.com/200x200'/>
-                    </div> 
+                   
                     
                 </div>
             </div>

@@ -38,13 +38,16 @@
         grid-row: images-s/image-s;
         grid-column: 1/-1;
         display: flex;
+        border: 1px solid #ffdb4d;
+        margin: 30px;
         
         
     }
 
     img {
+        
         padding: 10px;
-        margin-top: 20px;
+        margin: 20px;
     }
 
 }
