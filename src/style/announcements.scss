@@ -1,0 +1,32 @@
+    .announcements{
+        display: flex;
+        flex: wrap;
+        justify-content: space-between;
+        
+        
+    }
+
+.announcements__articles {
+    display: grid;
+    grid-row: announcements-s/announcements-e;
+    grid-column: 1fr;
+    justify-items: center;
+    align-content: center;
+    height: 700px;
+    width: 500px;
+    grid-row-gap: 15px;
+    
+   &-information {
+       height: 200px;
+       width: 200px;
+       font-size: 15px;
+   }
+}
+
+.announcements-header {
+    display: grid;
+    justify-self: center;
+    font-size: 50px;
+    margin-top: 50px;
+    
+}

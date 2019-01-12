@@ -3,9 +3,9 @@ import history from '../../history';
 
 class Navbar extends Component {
   render() {
-    const { className } = this.props;
+
     return (
-      <div className={`${className} navbar`}>
+      <div className= 'navbar'>
         <div className="navbar-links">
           <a onClick ={() => history.push('./meet-the-instructors')} className="navbar-link__meet" >Meet The Instructors </a>
           <a className="navbar-link__classes"> Classes </a>

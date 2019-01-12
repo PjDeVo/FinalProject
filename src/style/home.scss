@@ -1,7 +1,7 @@
 .home {
     display: grid;
     color: #ffdb4d;
-    font-size: 16px;
+    font-size: 15px;
     grid-row: content-s/content-e;
     grid-column: s/e;
     
@@ -11,6 +11,8 @@
 
     &__form-thai {
         display: grid;
+        
+        
        justify-self: center;
         
     }

@@ -1,0 +1,10 @@
+.footer {
+    display: grid;
+    grid-row: footer-s/footer-e;
+    grid-column: s/e;
+    justify-content: end;
+    font-size: 16px;
+    color: #ffdb4d;
+    align-content: center;
+    
+}

@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
+import {reducer as form} from 'redux-form'
+import homeAnnouncements from './announcementsReducer';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  homeAnnouncements 
 });
 
 export default rootReducer;

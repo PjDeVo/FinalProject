@@ -21,6 +21,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent;
+   
 }
 
 
@@ -28,4 +29,6 @@ body {
 @import './headerNavbar/navbar.scss';
 @import './layout.scss';
 @import './home.scss';
-@import './homeForm.scss'
+@import './homeForm.scss';
+@import './announcements.scss';
+@import './footer.scss';
