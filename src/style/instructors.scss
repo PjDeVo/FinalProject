@@ -1,0 +1,72 @@
+.instructors-page {
+    display: grid;
+    grid-row: content-s/content-e;
+    grid-column: s/e;
+    align-items: start;
+    justify-items: center;
+  
+    grid-template-rows: [first-s] 1fr [first-e second-s] 1fr [second-e images-s] 300px [images-e];
+    grid-template-columns: 1fr[one-s] 1fr [one-e two-s] 1fr [two-e]1fr; 
+    grid-column-gap: 50px;
+
+
+
+    &__james {
+        grid-row: first-s/first-e;
+        grid-column: one-s/one-e;
+    }
+
+    &__matt {
+        grid-row: first-s/first-e;
+        grid-column: two-s/two-e;
+
+    }
+
+    &__jerry {
+        grid-row: second-s/second-e;
+        grid-column: one-s/one-e
+
+    }
+
+    &__pat {
+        grid-row: second-s/second-e;
+        grid-column: two-s/two-e
+        
+    }
+
+    &__images {
+        grid-row: images-s/image-s;
+        grid-column: 1/-1;
+        display: flex;
+        
+        
+    }
+
+    img {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+}
+
+.instructors-layout{
+    display: grid;
+    grid-template-rows: [image-s] 1fr [image-e title-s] 50px [title-e message-s] 1fr [message-e] ;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    justify-items: center;
+    border: 1px solid #ffdb4d;
+    height: 600px;
+
+    &__title {
+        justify-self: center;
+        font-size: 40px;
+        color: #ffdb4d;
+    }
+
+    &__content {
+        color: #ffdb4d;
+        font-size: 16px;
+    }
+
+}
