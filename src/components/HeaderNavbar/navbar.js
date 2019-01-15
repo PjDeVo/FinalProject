@@ -7,11 +7,11 @@ class Navbar extends Component {
     return (
       <div className= 'navbar'>
         <div className="navbar-links">
-          <a onClick ={() => history.push('./meet-the-instructors')} className="navbar-link__meet" >Meet The Instructors </a>
-          <a className="navbar-link__classes"> Classes </a>
-          <a className="navbar-link__kids"> Kids Program </a>
-          <a className="navbar-link__schedule"> Schedule </a>
-          <a className="navbar-link__contact"> Contact </a>
+        <a onClick ={() => history.push('./')} className="navbar-links__home"> Home </a>
+          <a onClick ={() => history.push('./meet-the-instructors')} className="navbar-links__meet" >Instructors </a>
+          <a onClick ={() => history.push('./meet-the-instructors')} className="navbar-links__kids"> Kids Program </a>
+          <a onClick ={() => history.push('./meet-the-instructors')} className="navbar-links__schedule"> Schedule </a>
+          <a onClick ={() => history.push('./meet-the-instructors')} className="navbar-links__contact"> Contact </a>
         </div>
       </div>
     );

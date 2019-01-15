@@ -11,6 +11,8 @@
 
 
 
+
+
     &__james {
         grid-row: first-s/first-e;
         grid-column: one-s/one-e;
@@ -22,7 +24,7 @@
 
     }
 
-    &__jerry {
+    &__sean {
         grid-row: second-s/second-e;
         grid-column: one-s/one-e
 
@@ -40,7 +42,11 @@
         display: flex;
         border: 1px solid #ffdb4d;
         margin: 30px;
-        
+    
+        img {
+            height: 200px;
+            width: 200px;
+        }
         
     }
 
@@ -48,6 +54,8 @@
         
         padding: 10px;
         margin: 20px;
+        
+        
     }
 
 }
@@ -59,7 +67,7 @@
     grid-row-gap: 20px;
     justify-items: center;
     border: 1px solid #ffdb4d;
-    height: 600px;
+    height: 700px;
 
     &__title {
         justify-self: center;
@@ -70,6 +78,12 @@
     &__content {
         color: #ffdb4d;
         font-size: 16px;
+        padding: 20px;
+    }
+    &__image {
+        height: 350px;
+        width: 400px;
+
     }
 
 }

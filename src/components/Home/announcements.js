@@ -3,14 +3,16 @@ import {connect} from 'react-redux'
 import * as actions from '../../actions'
 
 class Announcements extends Component {
+    
 
     componentWillMount() {
         this.props.setHomeAnnouncements()
     }
     
     render() {
-        
+        const {src} = this.props;
         return(
+            
             
             <div className = 'announcements'>
                  {console.log("Props", this.props)}
@@ -20,7 +22,7 @@ class Announcements extends Component {
                        return (
                            <div className = 'announcements__articles'>
                                 <div className = 'announcements__articles-imageUrl'>
-                                    <img src='http://via.placeholder.com/200x200'/>
+                                     <img src = {announcement.imageUrl} />
                                 </div>
                                <div className = 'announcements__articles-title'>
                                     {announcement.title}

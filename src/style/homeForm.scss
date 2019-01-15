@@ -18,10 +18,15 @@
   &__image {
     grid-row: content-s/content-s;
     grid-column: image-s/image-e;
+    height: 300px;
+    width: 500px;
   }
 
   &__content {
+    width: 300px;
     grid-row: content-s/content-e;
     grid-column: text-s/text-e;
+    
   }
+
 }

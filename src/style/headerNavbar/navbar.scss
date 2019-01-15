@@ -7,6 +7,7 @@
   background-color: #333;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   height: 50px;
+  
 
   color: #ffdb4d;;
   font-size: 16px;
@@ -15,12 +16,13 @@
   border: 1px solid #a9abab;
 }
 
-.navbar-links {
+.navbar-links  {
   display: grid;
   grid-template-rows: [s] 1fr [e];
-  grid-template-columns: [meet-s]1fr [meet-e classes-s]1fr [classes-e kids-s] 1fr [kids-e schedule-s] 1fr [schedule-e contact-s] 1fr [contact-e];
+  grid-template-columns: [home-s] 1fr [home-e meet-s] 1fr [meet-e kids-s] 1fr [kids-e schedule-s] 1fr [schedule-e contact-s] 1fr [contact-e] ;
   justify-items: center;
   align-items: center;
+  width: 1000px;
 
   &:hover {
     cursor: pointer;
@@ -28,14 +30,13 @@
   }
   &:active {
     
-  }
-
-  &__meet {
+  } &__meet {
     grid-column: meet-s/meet-e;
+   
   }
 
-  &__classes {
-    grid-column: classes-s/classes-e;
+  &__home {
+    grid-column: home-s/home-e;
   }
 
   &__kids {
