@@ -8,47 +8,47 @@ class Instructors extends Component {
             <div className = 'instructors-page'>
                 <InstructorsLayout
                     className = 'instructors-page__james'
-                    image = {require('./Grindhouse/james.jpg')}
+                    image = {require('../../static/assets/Grindhouse/james.jpg')}
                     title = 'James Booth'
                     content = 'It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
                 />
                 <InstructorsLayout 
                     className = 'instructors-page__matt'
-                    image = {require('./Grindhouse/matt.jpg')}
+                    image = {require('../../static/assets/Grindhouse/matt.jpg')}
                     title = 'Matty Matt'
                     content = 'It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
                 />
                 <InstructorsLayout
                     className = 'instructors-page__sean'
-                    image = {require('./Grindhouse/sean.jpg')}
+                    image = {require('../../static/assets/Grindhouse/sean.jpg')}
                     title = 'Sean Brady'
                     content = 'It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
                 />
                 <InstructorsLayout
                     className = 'instructors-page__pat'
-                    image = {require('./Grindhouse/pat.jpg')}
+                    image = {require('../../static/assets/Grindhouse/pat.jpg')}
                     title = 'Pat DeVincentis'
                     content = 'It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
                 />
 
                 <div className = 'instructors-page__images'>
                     <div >
-                    <img className = 'instructors-page__images-image' src = {require ('./Grindhouse/gym.jpg')} /> 
+                    <img className = 'instructors-page__images-image' src = {require('../../static/assets/Grindhouse/gym.jpg')} /> 
                     </div>
                     
                     <div>
-                    <img className = 'instructors-page__images-image' src = {require ('./Grindhouse/mma.jpg')} /> 
+                    <img className = 'instructors-page__images-image' src = {require('../../static/assets/Grindhouse/mma.jpg')} /> 
                     </div>
 
                     <div>
-                    <img className = 'instructors-page__images-image' src = {require ('./Grindhouse/group.jpg')} /> 
+                    <img className = 'instructors-page__images-image' src = {require('../../static/assets/Grindhouse/group.jpg')} /> 
                     </div>
 
                     <div>
-                    <img className = 'instructors-page__images-image' src = {require ('./Grindhouse/killers.jpg')} /> 
+                    <img className = 'instructors-page__images-image' src = {require('../../static/assets/Grindhouse/killers.jpg')} /> 
                     </div> 
                     <div>
-                    <img className = 'instructors-page__images-image' src = {require ('./Grindhouse/bjjgroup.jpg')} /> 
+                    <img className = 'instructors-page__images-image' src = {require('../../static/assets/Grindhouse/bjjgroup.jpg')} /> 
                     </div> 
                    
                     

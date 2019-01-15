@@ -6,7 +6,7 @@ class Header extends Component {
     render() {
         return(
             <div className = 'header'>
-                <img className = 'header__image' onClick ={()=> history.push('./')} src = {require('./../Grindhouse/logo18a-sm.png')}/>
+                <img className = 'header__image' onClick ={()=> history.push('./')} src = {require('../../../static/assets/Grindhouse/logo18a-sm.png')}/>
             </div> 
             
         )
