@@ -13,6 +13,7 @@ import Layout from "./components/Layout";
 import history from './history';
 import Home from './components/Home/home';
 import Instructors from './components/instructors';
+import KidsHome from "./components/kids/kidsHome";
 
 function main() {
   ReactDOM.render(
@@ -22,6 +23,7 @@ function main() {
           <Switch>
             <Route path ='/' exact component = {Home}/>
             <Route path ='/meet-the-instructors' exact component = {Instructors}/>
+            <Route path ='/kids' exact component = {KidsHome}/>
           </Switch>
         </Layout>
       </Router>

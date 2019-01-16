@@ -1,0 +1,38 @@
+.kids-home {
+    display: grid;  
+    grid-row: content-s/content-e;
+    grid-column: s/e;
+    justify-items: center;
+  
+
+    grid-template-rows: 50px [title-s] 50px [ title-e little-s] 1fr [little-e big-s ]1fr [big-e descriptions]1fr [description-e];
+    grid-template-columns: [s] 1fr [e];
+    
+    h1 {
+        grid-row: title-s/title-e;
+        grid-column: s/e;
+        font-weight: 600;
+        font-size: 40px;
+    }
+    
+    
+    &__images { 
+        grid-row: little-s/little-e;
+        grid-column: s/e;
+        margin-top: 40px;
+        
+
+
+        
+        img {
+           
+            padding: 40px;
+            
+        }
+    }
+
+    &__main-image {
+        grid-row: big-s/big-e;
+        grid-column: s/e;
+    }
+}

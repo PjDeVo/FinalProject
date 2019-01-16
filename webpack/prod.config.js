@@ -40,13 +40,12 @@ module.exports = webpackMerge(webpackCommon, {
           fallback: 'style-loader',
           use: [
             {
-              loader: require.resolve('css-loader'),
+              loader: 'css-loader',
               options: {
-               importLoaders: 1,
-               minimize: true,
-               modules: true,
-               sourceMap: shouldUseSourceMap,
-              },
+                minimize: true,
+                sourceMap: true,
+                importLoaders: 2
+              }
             },
             {
               loader: 'postcss-loader',

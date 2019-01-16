@@ -16,6 +16,7 @@ body {
     overflow-x: hidden;
     font-weight: normal;
     background: #333;
+    color: #ffdb4d;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -33,3 +34,4 @@ body {
 @import './announcements.scss';
 @import './footer.scss';
 @import './instructors.scss';
+@import './kids.scss';

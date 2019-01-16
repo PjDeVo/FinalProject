@@ -1,7 +1,7 @@
 .navbar {
   display: grid;
   grid-row: navbar-s/navbar-e;
-  grid-column: s/e;
+  grid-column: 1/-1;
 
 
   background-color: #333;
@@ -22,7 +22,7 @@
   grid-template-columns: [home-s] 1fr [home-e meet-s] 1fr [meet-e kids-s] 1fr [kids-e schedule-s] 1fr [schedule-e contact-s] 1fr [contact-e] ;
   justify-items: center;
   align-items: center;
-  width: 1000px;
+  width: 900px;
 
   &:hover {
     cursor: pointer;

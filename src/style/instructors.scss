@@ -5,8 +5,8 @@
     align-items: start;
     justify-items: center;
   
-    grid-template-rows: [first-s] 1fr [first-e second-s] 1fr [second-e images-s] 300px [images-e];
-    grid-template-columns: 1fr[one-s] 1fr [one-e two-s] 1fr [two-e]1fr; 
+    grid-template-rows: [first-s] 1fr [first-e second-s] 1fr [second-e images-s] .5fr [images-e];
+    grid-template-columns:  [one-s] 1fr [one-e two-s] 1fr [two-e] ; 
     grid-column-gap: 50px;
 
 
@@ -63,7 +63,7 @@
 .instructors-layout{
     display: grid;
     grid-template-rows: [image-s] 1fr [image-e title-s] 50px [title-e message-s] 1fr [message-e] ;
-    grid-template-columns: 1fr;
+    grid-template-columns: [s]1fr[e];
     grid-row-gap: 20px;
     justify-items: center;
     border: 1px solid #ffdb4d;
@@ -81,8 +81,8 @@
         padding: 20px;
     }
     &__image {
-        height: 350px;
-        width: 400px;
+        height: 400px;
+        width: 475px;
 
     }
 
