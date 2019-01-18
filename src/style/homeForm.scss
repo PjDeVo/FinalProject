@@ -1,7 +1,9 @@
 .home-form {
   display: grid;
   grid-template-rows: [title-s]200px [title-e content-s] 1fr [content-e];
-  grid-template-columns:  [image-s] 1fr [image-e title-s] 1fr [title-e text-s] 1fr [text-e] ;
+  grid-template-columns:  130px[image-s] 1fr [image-e] 60px [text-s] 1fr [text-e] ;
+  justify-content: center;
+  
   
   
 
@@ -9,23 +11,25 @@
   &__title {
   
     display: grid;
-    width: 450px;
+    width: 300px;
     margin-top: 30px;
     font-size: 50px;
     color: #ffdb4d;
     grid-row: title-s/title-e;
-    grid-column: title-s/title-e;
-    justify-content: center;
+    grid-column: image-s/text-e;
+    justify-self: center;
+    align-self: center;
   }
   &__image {
     grid-row: content-s/content-s;
     grid-column: image-s/image-e;
-    height: 300px;
-    width: 500px;
+    height: 400px;
+    width: 600px;
     
   }
 
   &__content {
+    font-size: 1.8rem;
     width: 300px;
     grid-row: content-s/content-e;
     grid-column: text-s/text-e;

@@ -14,6 +14,16 @@
   font-weight: 600;
   justify-content: center;
   border: 1px solid #a9abab;
+
+  a {
+    color: blue;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline !important;
+      
+    }
+  }
+  
 }
 
 .navbar-links  {
@@ -24,14 +34,12 @@
   align-items: center;
   width: 900px;
 
-  &:hover {
-    cursor: pointer;
-    text-decoration: underline;
-  }
-  &:active {
+  
+  
     
-  } &__meet {
+  &__meet {
     grid-column: meet-s/meet-e;
+   
    
   }
 
@@ -52,5 +60,12 @@
   }
   & > * {
     grid-row: s/e;
+    
   }
+
+  
+}
+
+.active {
+  text-decoration: underline !important;
 }

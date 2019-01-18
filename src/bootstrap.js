@@ -14,6 +14,7 @@ import history from './history';
 import Home from './components/Home/home';
 import Instructors from './components/instructors';
 import KidsHome from "./components/kids/kidsHome";
+import Schedule from "./components/schedule";
 
 function main() {
   ReactDOM.render(
@@ -24,6 +25,8 @@ function main() {
             <Route path ='/' exact component = {Home}/>
             <Route path ='/meet-the-instructors' exact component = {Instructors}/>
             <Route path ='/kids' exact component = {KidsHome}/>
+            <Route path ='/schedule' exact component = {Schedule}/>
+            <Route path ='/contact' exact component = {KidsHome}/>
           </Switch>
         </Layout>
       </Router>

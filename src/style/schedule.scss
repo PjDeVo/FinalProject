@@ -1,0 +1,13 @@
+.schedule {
+    display: grid;
+    grid-row: content-s/content-e;
+    grid-column: s/e;
+    justify-content: center;
+    align-content: center;
+
+    img {
+        border-radius: 15px;
+        height: 500px;
+        width: 1200px;
+    }
+}

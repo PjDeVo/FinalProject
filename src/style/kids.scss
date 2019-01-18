@@ -5,8 +5,10 @@
     justify-items: center;
   
 
-    grid-template-rows: 50px [title-s] 50px [ title-e little-s] 1fr [little-e big-s ]1fr [big-e descriptions]1fr [description-e];
+    grid-template-rows: 50px [title-s] 50px [ title-e little-s] 1fr [little-e big-s ]1fr [big-e description-s] 1fr [description-e];
     grid-template-columns: [s] 1fr [e];
+    grid-row-gap: 40px;
+    border: 1px solid #ffdb4d;
     
     h1 {
         grid-row: title-s/title-e;
@@ -19,13 +21,13 @@
     &__images { 
         grid-row: little-s/little-e;
         grid-column: s/e;
-        margin-top: 40px;
         
 
 
         
         img {
-           
+            height: 300px;
+            width: 300px;
             padding: 40px;
             
         }
@@ -34,5 +36,26 @@
     &__main-image {
         grid-row: big-s/big-e;
         grid-column: s/e;
+
+        img {
+            height: 400px;
+            width: 800px
+        }
+    }
+
+    &__main-description {
+        grid-row: description-s/description-e;
+        grid-column: s/e;
+        font-size: 20px;
+        justify-self: center;
+        width: 600px; 
+        height: 390px;
+        border: 1px solid #ffdb4d;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+        padding: 20px;
     }
 }
