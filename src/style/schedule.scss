@@ -1,13 +1,28 @@
 .schedule {
+    
     display: grid;
     grid-row: content-s/content-e;
     grid-column: s/e;
-    justify-content: center;
-    align-content: center;
+    justify-items: center;
+    grid-row-gap: 50px;
+    border: 1px solid #ffdb4d;
+
+    h1 {
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
 
     img {
         border-radius: 15px;
         height: 500px;
         width: 1200px;
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 25px;
+        font-weight: 600;
+        width: 800px;
     }
 }
