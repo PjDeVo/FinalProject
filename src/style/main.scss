@@ -26,6 +26,8 @@ body {
 }
 
 
+$grey: #8a8a8a;
+
 @import './headerNavbar/header.scss';
 @import './headerNavbar/navbar.scss';
 @import './layout.scss';
@@ -36,3 +38,6 @@ body {
 @import './instructors.scss';
 @import './kids.scss';
 @import './schedule.scss';
+
+
+@import './navigation.scss';

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "./HeaderNavbar/navbar";
 import Header from "./HeaderNavbar/header";
 import Footer from "./HeaderNavbar/footer";
+import NavigationContainer from "./HeaderNavbar/navigationContainer";
 
 class Layout extends Component {
   render() {
@@ -9,7 +10,7 @@ class Layout extends Component {
       <div className="layout">
         {this.props.children}
         <Header  />
-        <Navbar  />
+        <NavigationContainer />
         <Footer />
       </div>
     );
