@@ -1,7 +1,7 @@
 .layout {
 
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: grid;
 
     grid-template-rows: [header-s]150px [header-e navbar-s ] 100px [navbar-e content-s ] 1fr [content-e footer-s] 150px [footer-e] 50px;
