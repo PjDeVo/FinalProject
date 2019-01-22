@@ -1,6 +1,6 @@
 .instructors-page {
 
-    @media screen and (max-width: 600px) {
+    @media screen and (min-device-width: 320px) and (max-device-width: 480px)  {
         display: grid;
         grid-template-columns: [s]1fr [e];
         grid-template-rows: [james-s] 1fr [james-e matt-s] 1fr [matt-e sean-s]1fr [sean-e pat-s]1fr [pat-e];
@@ -24,7 +24,7 @@
     &__james {
         grid-row: first-s/first-e;
         grid-column: one-s/one-e;
-        @media screen and (max-width: 600px) {
+        @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
             grid-row: james-s/james-e;
             grid-column: s/e;
         }
@@ -33,7 +33,7 @@
     &__matt {
         grid-row: first-s/first-e;
         grid-column: two-s/two-e;
-        @media screen and (max-width: 600px) {
+        @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
             grid-row: matt-s/matt-e;
             grid-column: s/e;
         }
@@ -41,7 +41,7 @@
     }
 
     &__sean {
-        @media screen and (max-width: 600px) {
+        @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
             grid-row: sean-s/sean-e;
             grid-column: s/e;
         }
@@ -52,7 +52,7 @@
     }
 
     &__pat {
-        @media screen and (max-width: 600px) {
+        @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
             grid-row: pat-s/pat-e;
             grid-column: s/e;
         }
@@ -62,6 +62,8 @@
     }
 
     &__images {
+
+       
         grid-row: images-s/image-s;
         grid-column: 1/-1;
         display: grid;
@@ -69,12 +71,27 @@
         grid-template-columns: repeat(5, 1fr);
         border: 1px solid #ffdb4d;
         margin: 30px;
+        @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+            display: inline-block;
+         
+            
+            
+        }
+        
         
         
     
         img {
+            @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+                height: 300px;
+                width: 400px;
+                
+                
+            }
             height: 200px;
             width: 200px;
+            
+            
         }
         
     }
@@ -102,10 +119,13 @@
     justify-items: center;
     border: 1px solid #ffdb4d;
     max-height: 700px;
-    @media screen and (max-width: 600px) {
-     width: 600px;
-     justify-items: center;
+
+    @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        width: 500px;
     }
+    
+
+    
 
     &__title {
         justify-self: center;
@@ -125,8 +145,8 @@
         image{
             max-height: 300px;
             max-width: 475px;
-            min-width: 100px;
-            min-height: 200px;
+            min-width: 80px;
+            min-height: 150px;
     
         }
 
