@@ -1,4 +1,12 @@
 .instructors-page {
+
+    @media screen and (max-width: 600px) {
+        display: grid;
+        grid-template-columns: [s]1fr [e];
+        grid-template-rows: [james-s] 1fr [james-e matt-s] 1fr [matt-e sean-s]1fr [sean-e pat-s]1fr [pat-e];
+        justify-content: center;
+
+    }
     display: grid;
     grid-row: content-s/content-e;
     grid-column: s/e;
@@ -16,21 +24,38 @@
     &__james {
         grid-row: first-s/first-e;
         grid-column: one-s/one-e;
+        @media screen and (max-width: 600px) {
+            grid-row: james-s/james-e;
+            grid-column: s/e;
+        }
     }
 
     &__matt {
         grid-row: first-s/first-e;
         grid-column: two-s/two-e;
+        @media screen and (max-width: 600px) {
+            grid-row: matt-s/matt-e;
+            grid-column: s/e;
+        }
 
     }
 
     &__sean {
+        @media screen and (max-width: 600px) {
+            grid-row: sean-s/sean-e;
+            grid-column: s/e;
+        }
         grid-row: second-s/second-e;
         grid-column: one-s/one-e
+       
 
     }
 
     &__pat {
+        @media screen and (max-width: 600px) {
+            grid-row: pat-s/pat-e;
+            grid-column: s/e;
+        }
         grid-row: second-s/second-e;
         grid-column: two-s/two-e
         
@@ -39,9 +64,13 @@
     &__images {
         grid-row: images-s/image-s;
         grid-column: 1/-1;
-        display: flex;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(5, 1fr);
         border: 1px solid #ffdb4d;
         margin: 30px;
+        
+        
     
         img {
             height: 200px;
@@ -58,7 +87,12 @@
         
     }
 
-}
+   
+        
+    }
+
+
+
 
 .instructors-layout{
     display: grid;
@@ -67,7 +101,11 @@
     grid-row-gap: 20px;
     justify-items: center;
     border: 1px solid #ffdb4d;
-    height: 700px;
+    max-height: 700px;
+    @media screen and (max-width: 600px) {
+     width: 600px;
+     justify-items: center;
+    }
 
     &__title {
         justify-self: center;
@@ -81,8 +119,16 @@
         padding: 20px;
     }
     &__image {
-        height: 400px;
-        width: 475px;
+        max-height: 300px;
+        max-width: 475px;
+
+        image{
+            max-height: 300px;
+            max-width: 475px;
+            min-width: 100px;
+            min-height: 200px;
+    
+        }
 
     }
 
