@@ -84,7 +84,7 @@
         img {
             @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
                 height: 300px;
-                width: 400px;
+                width: 340px;
                 
                 
             }
@@ -121,7 +121,7 @@
     max-height: 700px;
 
     @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-        width: 500px;
+        width: 400px;
     }
     
 
@@ -141,6 +141,10 @@
     &__image {
         max-height: 300px;
         max-width: 475px;
+        @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+            width: 345px;
+            
+        }
 
         image{
             max-height: 300px;
