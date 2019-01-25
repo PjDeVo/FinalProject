@@ -23,9 +23,9 @@ class Home extends Component {
                     image = {require('../../../static/assets/Grindhouse/thai.jpg')}
                  />
 
-                 <h1 className = 'announcements-header'>Announcements</h1>
+                 <h1 className = 'home__announcements-header'>Announcements</h1>
 
-                 <Announcements/>
+                 <Announcements className = 'home__announcements'/>
 
             </div>
                         

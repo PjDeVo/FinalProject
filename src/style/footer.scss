@@ -7,4 +7,9 @@
     color: #ffdb4d;
     align-content: center;
     
+
+    @media screen and (min-device-width: 320px) and (max-device-width: 640px) {
+        margin: 20px;
+    }
+    
 }

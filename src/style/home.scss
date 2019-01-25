@@ -5,19 +5,29 @@
     grid-row: content-s/content-e;
     grid-column: s/e;
     
+
+    
+    
     img {
         justify-self: center;
+
+        
         
     }
 
     &__image {
+
+        
         height: 300px;
         width: 800px;
     }
 
    &__form-bjj {
        h1 {
-           width: 538px;
+           width: 530px;
        }
    }
+
+   
 }
+

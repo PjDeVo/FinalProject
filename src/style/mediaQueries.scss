@@ -1,0 +1,108 @@
+.home {
+  @media screen and (min-device-width: 320px) and (max-device-width: 640px) {
+    display: grid;
+    grid-template-rows: [logo-s] 0.3fr [logo-e bjj-s] 1fr [bjj-e thai-s] 0.3fr [thai-s header-s] 0.2fr [header-e announcements-s] 0.0fr [announcements-e footer-s] 0.2fr [footer-e];
+    grid-template-columns: 0.2fr [s] 1fr [e] 0.2fr;
+    justify-items: center;
+    img {
+      grid-row: logo-s/logo-e;
+      grid-column: s/e;
+      width: auto;
+    }
+
+    &__form-bjj {
+      grid-row: bjj-s/bjj-e;
+      grid-column: s/e;
+
+      h1 {
+        margin-left: 10%;
+      }
+      img {
+          
+        width: 93%;
+    }
+    }
+
+    &__form-thai {
+      grid-row: thai-s/thai-e;
+      grid-column: s/e;
+
+      img {
+          
+          width: 93%;
+      }
+
+      h1 {
+        margin-left: 20%;
+      }
+    }
+
+    &__announcements-header {
+      grid-row: announcements-s/announcements-e;
+      grid-column: s/e;
+      align-self: start;
+      padding-top: 400px;
+      font-size: 60px;
+    }
+  }
+}
+
+.home-form {
+  @media screen and (min-device-width: 320px) and (max-device-width: 640px) {
+    display: inline-block;
+    flex-wrap: wrap;
+    height: 40%;
+    width: auto;
+    justify-content: center;
+    
+    
+
+    &__title {
+      grid-row: title-s/title-e;
+      grid-column: s/e;
+      justify-items: center;
+    }
+    &__image {
+      grid-row: image-s/image-e;
+      grid-column: s/e;
+      height: 80%;
+      width: auto;
+      margin-bottom: 5%;
+    }
+    &__content {
+      display: grid;
+      grid-row: content-s/content-e;
+      grid-column: s/e;
+      margin-left: 15%;
+      height: 20%;
+      font-size: 20px;
+    }
+  }
+}
+
+.announcements {
+  @media screen and (min-device-width: 320px) and (max-device-width: 640px) {
+    display: grid;
+
+    justify-content: space-between;
+    grid-column: s/e;
+    width: auto;
+    height: 40%;
+  }
+}
+
+.announcements__articles {
+  @media screen and (min-device-width: 320px) and (max-device-width: 640px) {
+    width: 30%;
+    height: auto;
+    margin: 20px;
+
+    img {
+      width: 90%;
+      height: auto;
+    }
+
+    &-information {
+    }
+  }
+}

@@ -22,6 +22,17 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent;
+
+    @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        -webkit-tap-highlight-color: transparent;
+
+        background-color: #333 !important;
+        color: #ffdb4d!important;
+        
+    }
    
 }
 
@@ -39,4 +50,6 @@ $grey: #8a8a8a;
 @import './kids.scss';
 @import './schedule.scss';
 @import './navigation.scss';
-@import './contact/contact.scss'
+@import './contact/contact.scss';
+
+@import './mediaQueries.scss';
