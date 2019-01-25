@@ -40,7 +40,7 @@ body {
 $grey: #8a8a8a;
 
 @import './headerNavbar/header.scss';
-@import './headerNavbar/navbar.scss';
+
 @import './layout.scss';
 @import './home.scss';
 @import './homeForm.scss';
@@ -49,7 +49,7 @@ $grey: #8a8a8a;
 @import './instructors.scss';
 @import './kids.scss';
 @import './schedule.scss';
-@import './navigation.scss';
+@import './headerNavbar/navigation.scss';
 @import './contact/contact.scss';
 
 @import './mediaQueries.scss';

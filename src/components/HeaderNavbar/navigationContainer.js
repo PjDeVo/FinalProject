@@ -19,7 +19,7 @@ class NavigationContainer extends Component {
             <NavLink to="/meet-the-instructors" activeClassName="nav-link-active">Instructors</NavLink>
           </div>
           <div className = 'nav-link-wrapper__kids'>
-            <NavLink to="/kids" activeClassName="nav-link-active">Kids Program</NavLink>
+            <NavLink to="/kids" activeClassName="nav-link-active">Future Champs</NavLink>
           </div>
           <div className = 'nav-link-wrapper__schedule'>
             <NavLink to="/schedule" activeClassName="nav-link-active">Schedule</NavLink>
