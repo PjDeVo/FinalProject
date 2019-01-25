@@ -1,8 +1,10 @@
 .home-form {
   display: grid;
-  grid-template-rows: [title-s]200px [title-e content-s] 1fr [content-e];
-  grid-template-columns:  130px[image-s] 1fr [image-e] 60px [text-s] 1fr [text-e] ;
+  grid-template-rows: [title-s]30% [title-e content-s] 1fr [content-e];
+  grid-template-columns:  20%[image-s] 1fr [image-e] 10% [text-s] 1fr [text-e] ;
   justify-content: center;
+  height: 100vh;
+  width: 100vw;
   
   
   
@@ -19,6 +21,7 @@
     grid-column: image-s/text-e;
     justify-self: center;
     align-self: center;
+    padding: 40px;
   }
   &__image {
     grid-row: content-s/content-s;

@@ -4,6 +4,8 @@
     font-size: 15px;
     grid-row: content-s/content-e;
     grid-column: s/e;
+    height: 100%;
+    width: 100vw;
     
 
     
@@ -18,8 +20,8 @@
     &__image {
 
         
-        height: 300px;
-        width: 800px;
+        height: 80%;
+        width: 50%;
     }
 
    &__form-bjj {

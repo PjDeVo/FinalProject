@@ -11,7 +11,7 @@ class Layout extends Component {
         {this.props.children}
         <Header  />
         <NavigationContainer />
-        <Footer />
+        <Footer  />
       </div>
     );
   }

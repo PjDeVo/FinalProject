@@ -5,7 +5,7 @@
     display: grid;
 
     grid-template-rows: [header-s]150px [header-e navbar-s ] 100px [navbar-e content-s ] 1fr [content-e footer-s] 150px [footer-e] 50px;
-    grid-template-columns: minmax(80px,200px)[s] 1fr [e] minmax(80px,200px);
+    grid-template-columns: [s] 1fr [e] ;
     
     background-color: #333;
     
