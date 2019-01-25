@@ -1,163 +1,129 @@
 .instructors-page {
-
-    @media screen and (min-device-width: 320px) and (max-device-width: 480px)  {
-        display: grid;
-        grid-template-columns: [s] 1fr [e] ;
-        grid-template-rows: [james-s] 1fr [james-e matt-s] 1fr [matt-e sean-s]1fr [sean-e pat-s]1fr [pat-e];
-        justify-content: center;
-        width: 600px;
-
-    }
+  @media screen and (min-device-width: 100px) and (max-device-width: 480px) {
     display: grid;
-    grid-row: content-s/content-e;
-    grid-column: s/e;
-    align-items: start;
-    justify-items: center;
-  
-    grid-template-rows: [first-s] 1fr [first-e second-s] 1fr [second-e images-s] .5fr [images-e];
-    grid-template-columns:  [one-s] 1fr [one-e two-s] 1fr [two-e] ; 
-    grid-column-gap: 50px;
+    grid-template-columns: [s] 1fr [e];
+    grid-template-rows: [james-s] 1fr [james-e matt-s] 1fr [matt-e sean-s]1fr [sean-e pat-s]1fr [pat-e];
+    justify-content: center;
+    width: 600px;
+  }
+  display: grid;
+  grid-row: content-s/content-e;
+  grid-column: s/e;
+  align-items: start;
+  justify-items: center;
 
+  grid-template-rows: [first-s] 1fr [first-e second-s] 1fr [second-e images-s] 0.5fr [images-e];
+  grid-template-columns: [one-s] 1fr [one-e two-s] 1fr [two-e];
+  grid-column-gap: 50px;
 
-
-
-
-    &__james {
-        grid-row: first-s/first-e;
-        grid-column: one-s/one-e;
-        @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-            grid-row: james-s/james-e;
-            grid-column: s/e;
-        }
+  &__james {
+    grid-row: first-s/first-e;
+    grid-column: one-s/one-e;
+    @media screen and (min-device-width: 100px) and (max-device-width: 480px) {
+      grid-row: james-s/james-e;
+      grid-column: s/e;
     }
+  }
 
-    &__matt {
-        grid-row: first-s/first-e;
-        grid-column: two-s/two-e;
-        @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-            grid-row: matt-s/matt-e;
-            grid-column: s/e;
-        }
-
+  &__matt {
+    grid-row: first-s/first-e;
+    grid-column: two-s/two-e;
+    @media screen and (min-device-width: 100px) and (max-device-width: 480px) {
+      grid-row: matt-s/matt-e;
+      grid-column: s/e;
     }
+  }
 
-    &__sean {
-        @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-            grid-row: sean-s/sean-e;
-            grid-column: s/e;
-        }
-        grid-row: second-s/second-e;
-        grid-column: one-s/one-e
-       
-
+  &__sean {
+    @media screen and (min-device-width: 100px) and (max-device-width: 480px) {
+      grid-row: sean-s/sean-e;
+      grid-column: s/e;
     }
+    grid-row: second-s/second-e;
+    grid-column: one-s/one-e;
+  }
 
-    &__pat {
-        @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-            grid-row: pat-s/pat-e;
-            grid-column: s/e;
-        }
-        grid-row: second-s/second-e;
-        grid-column: two-s/two-e
-        
+  &__pat {
+    @media screen and (min-device-width: 100px) and (max-device-width: 480px) {
+      grid-row: pat-s/pat-e;
+      grid-column: s/e;
     }
+    grid-row: second-s/second-e;
+    grid-column: two-s/two-e;
+  }
 
-    &__images {
-
-       
-        grid-row: images-s/image-s;
-        grid-column: 1/-1;
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: repeat(5, 1fr);
-        border: 1px solid #ffdb4d;
-        margin: 30px;
-        @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-            display: inline-block;
-         
-            
-            
-        }
-        
-        
-        
-    
-        img {
-            @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-                height: 300px;
-                width: 350px;
-                
-                
-            }
-            height: 200px;
-            width: 200px;
-            
-            
-        }
-        
+  &__images {
+    grid-row: images-s/image-s;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    border: 1px solid #ffdb4d;
+    margin: 30px;
+    @media screen and (min-device-width: 100px) and (max-device-width: 480px) {
+      display: inline-block;
     }
 
     img {
-        
-        padding: 10px;
-        margin: 20px;
-        
-        
+      @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        height: 300px;
+        width: 350px;
+      }
+      height: 200px;
+      width: 200px;
     }
+  }
 
-   
-        
-    }
+  img {
+    padding: 10px;
+    margin: 20px;
+  }
+}
 
+.instructors-layout {
+  display: grid;
+  grid-template-rows: [image-s] 1fr [image-e title-s] 50px [title-e message-s] 1fr [message-e];
+  grid-template-columns: [s]1fr[e];
+  grid-row-gap: 20px;
+  justify-items: center;
+  border: 1px solid #ffdb4d;
+  max-height: 600px;
+  max-width: 600px;
+  min-width: 450px;
 
+  &__title {
+    justify-self: center;
+    font-size: 40px;
+    color: #ffdb4d;
+  }
 
-
-.instructors-layout{
-    display: grid;
-    grid-template-rows: [image-s] 1fr [image-e title-s] 50px [title-e message-s] 1fr [message-e] ;
-    grid-template-columns: [s]1fr[e];
-    grid-row-gap: 20px;
-    justify-items: center;
-    border: 1px solid #ffdb4d;
-    max-height: 600px;
-    width: 700px;
-
+  &__content {
+    color: #ffdb4d;
+    font-size: 16px;
+    padding: 20px;
+  }
+  &__image {
+    height: 320px;
+    width: 420px;
     @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-        min-width: 300px;
-        max-width: 400px;
-
+      width: 350px;
     }
-    
 
-    
-
-    &__title {
-        justify-self: center;
-        font-size: 40px;
-        color: #ffdb4d;
+    image {
+      max-height: 300px;
+      max-width: 475px;
+      min-width: 80px;
+      min-height: 150px;
     }
+  }
+
+  @media screen and (min-device-width: 100px) and (max-device-width: 480px) {
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 650px;
 
     &__content {
-        color: #ffdb4d;
-        font-size: 16px;
-        padding: 20px;
+     max-width: 500px;
     }
-    &__image {
-        max-height: 300px;
-        max-width: 475px;
-        @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-            width: 350px;
-            
-        }
-
-        image{
-            max-height: 300px;
-            max-width: 475px;
-            min-width: 80px;
-            min-height: 150px;
-    
-        }
-
-    }
-
+  }
 }
