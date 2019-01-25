@@ -20,7 +20,8 @@
       }
       img {
           
-        width: 93%;
+        width: 95%;
+        height: 100%;
     }
     }
 
@@ -42,7 +43,7 @@
       grid-row: announcements-s/announcements-e;
       grid-column: s/e;
       align-self: start;
-      padding-top: 400px;
+      padding-top: 500px;
       font-size: 60px;
     }
   }
@@ -62,6 +63,7 @@
       grid-row: title-s/title-e;
       grid-column: s/e;
       justify-items: center;
+      padding: 3%;
     }
     &__image {
       grid-row: image-s/image-e;
@@ -105,5 +107,7 @@
 
     &-information {
     }
+    margin-bottom: 20%;
+    margin-top: 0;
   }
 }
