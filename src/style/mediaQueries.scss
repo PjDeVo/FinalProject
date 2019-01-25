@@ -4,7 +4,7 @@
     grid-template-rows: [logo-s] 0.3fr [logo-e bjj-s] 1fr [bjj-e thai-s] 0.3fr [thai-s header-s] 0.2fr [header-e announcements-s] 0.0fr [announcements-e footer-s] 0.2fr [footer-e];
     grid-template-columns: 0.2fr [s] 1fr [e] 0.2fr;
     justify-items: center;
-    width: 90%;
+    width: 85%;
     img {
       grid-row: logo-s/logo-e;
       grid-column: s/e;
