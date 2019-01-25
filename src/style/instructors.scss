@@ -1,13 +1,14 @@
 .instructors-page {
-  
   display: grid;
   grid-row: content-s/content-e;
+
   grid-column: s/e;
   align-items: start;
   justify-items: center;
 
   grid-template-rows: [first-s] 1fr [first-e second-s] 1fr [second-e images-s] 0.5fr [images-e];
   grid-template-columns: 200px [one-s] 1fr [one-e two-s] 1fr [two-e] 200px;
+  grid-column-gap: 30px;
   
 
   &__james {
@@ -15,7 +16,7 @@
     grid-column: one-s/one-e;
 
 
-    @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 500px) {
       grid-row: james-s/james-e;
       grid-column: s/e;
     }
@@ -26,14 +27,14 @@
     grid-column: two-s/two-e;
 
 
-    @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 500px) {
       grid-row: matt-s/matt-e;
       grid-column: s/e;
     }
   }
 
   &__sean {
-    @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 500px) {
       grid-row: sean-s/sean-e;
       grid-column: s/e;
     }
@@ -44,7 +45,7 @@
   }
 
   &__pat {
-    @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 500px) {
       grid-row: pat-s/pat-e;
       grid-column: s/e;
     }
@@ -64,12 +65,12 @@
     margin: 30px;
 
 
-    @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 500px) {
       display: inline-block;
     }
 
     img {
-      @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      @media screen and (min-width: 320px) and (max-width: 500px) {
         height: 300px;
         width: 350px;
       }
@@ -83,7 +84,7 @@
     padding: 10px;
     margin: 20px;
   }
-  @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 500px) {
     display: grid;
     grid-template-columns: [s] 1fr [e];
     grid-template-rows: [james-s] 1fr [james-e matt-s] 1fr [matt-e sean-s]1fr [sean-e pat-s]1fr [pat-e];
@@ -97,11 +98,13 @@
   grid-template-rows: [image-s] 1fr [image-e title-s] 50px [title-e message-s] 1fr [message-e];
   grid-template-columns: [s]1fr[e];
   grid-row-gap: 20px;
+  
   justify-items: center;
   border: 1px solid #ffdb4d;
   max-height: 700px;
   max-width: 600px;
   min-width: 500px;
+  
 
   &__title {
     justify-self: center;
@@ -117,7 +120,7 @@
   &__image {
     height: 380px;
     width: 450px;
-    @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    @media screen and (min-width: 320px) and (max-width: 500px) {
       width: 350px;
     }
 
@@ -129,7 +132,7 @@
     }
   }
 
-  @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 500px) {
     min-width: 300px;
     max-width: 400px;
     min-height: 650px;

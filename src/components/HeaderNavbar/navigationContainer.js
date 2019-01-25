@@ -11,7 +11,7 @@ class NavigationContainer extends Component {
 
     return (
       <div className="nav-wrapper">
-      
+
           <div className = 'nav-link-wrapper__home'>
             <NavLink exact to="/" activeClassName="nav-link-active">Home</NavLink>
           </div>
