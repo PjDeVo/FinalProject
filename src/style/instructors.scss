@@ -2,7 +2,7 @@
 
     @media screen and (min-device-width: 320px) and (max-device-width: 480px)  {
         display: grid;
-        grid-template-columns: [s]1fr [e];
+        grid-template-columns: [s] 1fr [e] ;
         grid-template-rows: [james-s] 1fr [james-e matt-s] 1fr [matt-e sean-s]1fr [sean-e pat-s]1fr [pat-e];
         justify-content: center;
         width: 600px;
@@ -119,10 +119,13 @@
     grid-row-gap: 20px;
     justify-items: center;
     border: 1px solid #ffdb4d;
-    max-height: 700px;
+    max-height: 600px;
+    width: 700px;
 
     @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-        width: 410px;
+        min-width: 300px;
+        max-width: 400px;
+
     }
     
 
