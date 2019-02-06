@@ -6,6 +6,7 @@
     background-color: #333;
   
     height: 100px;
+    width: 90%;
 
     
 
@@ -19,6 +20,7 @@
 
     color: #ffdb4d;;
     justify-content: center;
+    justify-self: center;
     
  
 
@@ -27,13 +29,18 @@
         color: #ffdb4d;
         font-size: 24px;
         font-weight:600;
+        width: 200px;
         
+    }
+    @media only screen and (min-width : 768px) and (max-width : 1024px) {
+      width: 90%;
     }
 }
 
 .nav-link-wrapper {
     display: grid;
     color: #ffdb4d;
+
     
 
     &__meet {
