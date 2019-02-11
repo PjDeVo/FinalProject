@@ -7,7 +7,7 @@
   align-items: start;
   justify-items: center;
 
-  grid-template-rows: [title-s] 60px [title-e james-s]1fr [james-e matt-s]1fr [matt-e sean-s]1fr [sean-e pat-s] 1fr [pat-e images-s] 1fr [images-e];
+  grid-template-rows: [title-s] 60px [title-e james-s]1fr [james-e matt-s]1fr [matt-e sean-s]1fr [sean-e pat-s] 1fr [pat-e images-s] .5fr [images-e];
   grid-template-columns: [s] 1fr [e];
   grid-row-gap: 50px;
 
@@ -90,6 +90,7 @@
 
     @media screen and (min-width: 320px) and (max-width: 500px) {
       display: inline-block;
+      border: none;
     }
 
     img {
@@ -122,7 +123,7 @@
   grid-row-gap: 20px;
   
   justify-items: center;
-  height: 900px;
+  height: 700px;
 
 
   

@@ -1,8 +1,10 @@
 .announcements-wrapper {
+    height: 700px;
     display: grid;
     grid-template-rows: [s] 1fr [m] 1fr [e] 1fr [f];
     grid-template-columns: 1fr;
     justify-content: center;
+    
 
 }
 
