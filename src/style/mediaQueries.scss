@@ -3,175 +3,177 @@
 
 
 
-  .body {
-    @media  (min-width: 320px) and (max-width: 600px) {
-    margin: 0 auto;
-    width: 70%;
-    clear: both;
-  }
-  }
-  
-  .home {
+ .body {
   @media  (min-width: 320px) and (max-width: 600px) {
+  margin: 0 auto;
+  width: 70%;
+  clear: both;
+}
+}
+
+.home {
+@media  (min-width: 320px) and (max-width: 600px) {
+  
+  padding: 20px;
+  &__image {
+    height: 250px;
+    width: 360px;
+
     
-    padding: 20px;
-    &__image {
-      height: 250px;
-      width: 360px;
-  
-      
-    }
-   
-   
   }
-  }
-  
-  .home-form {
-  @media  (min-width: 320px) and (max-width: 600px) {
+ 
+ 
+}
+
+
+}
+
+.home-form {
+@media  (min-width: 320px) and (max-width: 1300px) {
+  display: grid;
+  grid-template-rows: [title-s].5fr [title-e photo-s]1fr [photo-e text-s]1fr [text-e]; 
+  grid-template-columns: [s] 1fr [e];
+  &__title {
+    font-size: 30px;
     display: grid;
-    grid-template-rows: [title-s].5fr [title-e photo-s]1fr [photo-e text-s]1fr [text-e]; 
-    grid-template-columns: [s] 1fr [e];
-    &__title {
-      font-size: 30px;
-      display: grid;
-      grid-row: title-s/title-e;
-      grid-column: s/e;
-      justify-content: center;
-      
-      
-    }
-  
-    &__image {
-      display: grid;
-      grid-row: photo-s/photo-e;
-      grid-column: s/e;
-      width: 60%;
-      
-      
-  
-    }
-  
-    &__content {
-      display: grid;
-      grid-row: text-s/text-e;
-      grid-column: s/e;
-      width: 50%;
-      justify-self: center;
-      font-size: 16px;
-      padding: 20px;
-    }
-  }
-  }
-  
-  .nav-wrapper {
-  @media  (min-width: 320px) and (max-width: 500px) {
-   display: none;
-  }
-  }
-  
-  
-  .announcements {
-  @media  (min-width: 320px) and (max-width: 600px) {
-    
-  
-  
-  display: inline-block;
-  justify-self: start;
-  margin-left: 150px;
-  width: 0%;
-  justify-items: center;
-  }
-  
-  }
-  
-  .footer {
-  @media  (min-width: 320px) and (max-width: 600px) {
-    display: none;
-  
-  }
-  }
-  
-  
-  .kids-home {
-    @media  (min-width: 320px) and (max-width: 600px) {
-     
-      padding: 20px;
-      display: grid;  
-      grid-row: content-s/content-e;
-      grid-column: s/e;
-      justify-items: center;
-    
-  
-      grid-template-rows: 50px [title-s] 50px [ title-e little-s] 1fr [little-e big-s ].2fr [big-e description-s] .5fr [description-e];
-      grid-template-columns: [s] 1fr [e];
-   
-  
-      &__images {
-        display: grid;
-        grid-row: little-s/little-e;
-        grid-column: 1/-1;
-        img {
-        height: 300px;
-        width: 300px;
-        }
-      }
-  
-      &__title {
-        
-        grid-row: title-s/title-e;
-        grid-column: 1/-1;
-        justify-self: center;
-        
-      }
-  
-      
-  
-      h1 {
-        font-size: 18px;
-        
-      }
-  
-      &__main-image {
-        img {
-          height: 300px;
-          width: 400px;
-        }
-      }
-      &__main-description {
-        display: grid;
-        
-  
-        width: 400px;
-        p {
-          font-size: 14px;
-        }
-       
-      }
-  
-      
-  }
-  
-  
-  }
-  
-  .schedule {
-  
-  @media  (min-width: 320px) and (max-width: 600px) {
-    display: grid;
+    grid-row: title-s/title-e;
+    grid-column: s/e;
     justify-content: center;
-    img {
-      border-radius: 15px;
-        height: 350px;
-        width: 100vw;
-        
-    }
-  
-    p {
-      font-size: 12px;
-      width: 200px;
-    }
+    
+    
   }
-  
+
+  &__image {
+    display: grid;
+    grid-row: photo-s/photo-e;
+    grid-column: s/e;
+    width: 60%;
+    
+    
+
   }
+
+  &__content {
+    display: grid;
+    grid-row: text-s/text-e;
+    grid-column: s/e;
+    width: 50%;
+    justify-self: center;
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+}
+
+.nav-wrapper {
+@media  (min-width: 320px) and (max-width: 500px) {
+ display: none;
+}
+}
+
+
+.announcements {
+@media  (min-width: 320px) and (max-width: 600px) {
   
-  /* media queries for small screens end*/
+
+
+display: inline-block;
+justify-self: start;
+margin-left: 150px;
+width: 0%;
+justify-items: center;
+}
+
+}
+
+.footer {
+@media  (min-width: 320px) and (max-width: 600px) {
+  display: none;
+
+}
+}
+
+
+.kids-home {
+  @media  (min-width: 320px) and (max-width: 600px) {
+   
+    padding: 20px;
+    display: grid;  
+    grid-row: content-s/content-e;
+    grid-column: s/e;
+    justify-items: center;
+  
+
+    grid-template-rows: 50px [title-s] 50px [ title-e little-s] 1fr [little-e big-s ].2fr [big-e description-s] .5fr [description-e];
+    grid-template-columns: [s] 1fr [e];
+ 
+
+    &__images {
+      display: grid;
+      grid-row: little-s/little-e;
+      grid-column: 1/-1;
+      img {
+      height: 300px;
+      width: 300px;
+      }
+    }
+
+    &__title {
+      
+      grid-row: title-s/title-e;
+      grid-column: 1/-1;
+      justify-self: center;
+      
+    }
+
+    
+
+    h1 {
+      font-size: 18px;
+      
+    }
+
+    &__main-image {
+      img {
+        height: 300px;
+        width: 400px;
+      }
+    }
+    &__main-description {
+      display: grid;
+      
+
+      width: 400px;
+      p {
+        font-size: 14px;
+      }
+     
+    }
+
+    
+}
+
+
+}
+
+.schedule {
+
+@media  (min-width: 320px) and (max-width: 600px) {
+  display: grid;
+  justify-content: center;
+  img {
+    border-radius: 15px;
+      height: 350px;
+      width: 100vw;
+      
+  }
+
+  p {
+    font-size: 12px;
+    width: 200px;
+  }
+}
+
+}
+
+/* media queries for small screens end*/
