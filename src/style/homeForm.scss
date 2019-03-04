@@ -23,7 +23,12 @@
     grid-row: content-s/content-s;
     grid-column: image-s/image-e;
     height: 300px;
-    width: 500px;
+    width: 400px;
+
+    img {
+      height: auto; 
+      width: 40%;
+    }
   }
 
   &__content {
