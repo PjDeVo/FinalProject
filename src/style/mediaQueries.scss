@@ -13,8 +13,7 @@
 
 .home {
 @media  (min-width: 320px) and (max-width: 600px) {
-  
-  padding: 20px;
+  display: grid;
   &__image {
     height: 250px;
     width: 360px;
@@ -31,14 +30,15 @@
 .home-form {
 @media  (min-width: 320px) and (max-width: 1300px) {
   display: grid;
-  grid-template-rows: [title-s].5fr [title-e photo-s]1fr [photo-e text-s]1fr [text-e]; 
+  grid-template-rows: [title-s].3fr [title-e photo-s].5fr [photo-e text-s]1fr [text-e]; 
   grid-template-columns: [s] 1fr [e];
   &__title {
-    font-size: 45px;
+    font-size: 30px;
     display: grid;
     grid-row: title-s/title-e;
     grid-column: s/e;
     justify-content: center;
+    max-width: 400px;
     
     
   }
@@ -47,7 +47,7 @@
     display: grid;
     grid-row: photo-s/photo-e;
     grid-column: s/e;
-    width: 60%;
+    max-width: 60%;
     height: auto;
     
     
