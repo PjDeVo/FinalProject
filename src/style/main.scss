@@ -36,6 +36,19 @@ body {
    
 }
 
+.nav-wrapper.hidden {
+    @media  (min-width: 320px) and (max-width: 600px) {
+    display: none;
+    }
+}
+
+.nav-wrapper.show {
+    @media  (min-width: 320px) and (max-width: 600px) {
+    display: block;
+    transition: 3s ease;
+    }
+}
+
 
 $grey: #8a8a8a;
 

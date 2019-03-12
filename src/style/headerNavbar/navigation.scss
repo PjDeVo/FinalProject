@@ -76,3 +76,9 @@
     text-decoration: underline;
   }
 
+  .nav-wrapper{
+    @media  (min-width: 320px) and (max-width: 600px) {
+      display: none;
+    }
+  }
+
