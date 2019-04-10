@@ -186,4 +186,49 @@ justify-items: center;
 
 }
 
+.contact__map {
+  @media  (min-width: 320px) and (max-width: 600px) {
+  overflow:hidden;
+  position:relative;
+  }
+}
+.contact__map iframe{
+  @media  (min-width: 320px) and (max-width: 600px) {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  }
+
+}
+
+.contact-form {
+  @media  (min-width: 320px) and (max-width: 600px) {
+  &__name.form-input__input,
+  &__email.form-input__input, {
+      height: auto;
+      width: 90%;
+   
+
+      
+  }
+
+     
+}
+}
+
+.contact-form__message input {
+  @media (max-width: 600px) {
+    height: 30px;
+    width: auto;
+  }
+}
+
+.contact-form {
+  @media(min-width: 320px) and (max-width: 600px) {
+    display: block;
+  }
+}
+
+
 /* media queries for small screens end*/
