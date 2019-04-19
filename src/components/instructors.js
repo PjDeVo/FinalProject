@@ -34,43 +34,7 @@ class Instructors extends Component {
             content="It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
           />
         </div>
-        
-
-        {/* <div className="instructors-page__images">
-          {/* <div>
-            <img
-              className="instructors-page__images-image"
-              src={require("../../static/assets/Grindhouse/gym.jpg")}
-            />
-          </div>
-
-          <div>
-            <img
-              className="instructors-page__images-image"
-              src={require("../../static/assets/Grindhouse/mma.jpg")}
-            />
-          </div>
-
-          <div>
-            <img
-              className="instructors-page__images-image"
-              src={require("../../static/assets/Grindhouse/group.jpg")}
-            />
-          </div>
-
-          <div>
-            <img
-              className="instructors-page__images-image"
-              src={require("../../static/assets/Grindhouse/killers.jpg")}
-            />
-          </div>
-          <div>
-            <img
-              className="instructors-page__images-image"
-              src={require("../../static/assets/Grindhouse/bjjgroup.jpg")}
-            />
-          </div> */}
-        {/* </div> */} 
+    
       </div>
     );
   }
