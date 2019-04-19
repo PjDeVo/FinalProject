@@ -2,7 +2,7 @@
 
     display: grid;
 
-    grid-template-rows: [header-s]150px [header-e navbar-s ] 100px [navbar-e content-s ] 1fr [content-e footer-s] 150px [footer-e] 50px;
+    grid-template-rows: [header-s] 150px [header-e navbar-s ] 100px [navbar-e content-s ] 1fr [content-e];
     grid-template-columns: [s] 1fr [e] ;
     
     background-color: #333;

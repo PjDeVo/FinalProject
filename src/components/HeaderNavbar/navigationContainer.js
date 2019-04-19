@@ -47,9 +47,6 @@ class NavigationContainer extends Component {
             <div className = 'nav-link-wrapper__schedule'>
               <NavLink to="/schedule" activeClassName="nav-link-active">Schedule</NavLink>
             </div>
-            <div className = 'nav-link-wrapper__contact'>
-              <NavLink to="/contact" activeClassName="nav-link-active">Contact</NavLink>
-            </div>
 
           
         </div>

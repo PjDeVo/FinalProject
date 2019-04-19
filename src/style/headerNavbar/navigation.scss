@@ -11,7 +11,7 @@
     
 
     grid-template-rows: [s] 1fr [e];
-    grid-template-columns: [home-s] 1fr [home-e meet-s] 1fr [meet-e kids-s] 1fr [kids-e schedule-s] 1fr [schedule-e contact-s] 1fr [contact-e] ;
+    grid-template-columns: [home-s] 1fr [home-e meet-s] 1fr [meet-e kids-s] 1fr [kids-e schedule-s] 1fr [schedule-e] ;
     justify-items: center;
     align-items: center;
     width: mixmax(600px, 2500px);

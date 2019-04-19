@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
-import Header from "./HeaderNavbar/header";
-import Footer from "./HeaderNavbar/footer";
+import Header from "./HeaderNavbar/header"
 import NavigationContainer from "./HeaderNavbar/navigationContainer";
 
 class Layout extends Component {
@@ -11,7 +10,7 @@ class Layout extends Component {
         {this.props.children}
         <Header  />
         <NavigationContainer />
-        <Footer  />
+      
       </div>
     );
   }

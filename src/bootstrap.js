@@ -24,10 +24,9 @@ function main() {
         <Layout>
           <Switch>
             <Route path ='/' exact component = {Home}/>
-            <Route path ='/meet-the-instructors' exact component = {Instructors}/>
+            <Route path ='/meet-the-instructors' component = {Instructors}/>
             <Route path ='/kids' exact component = {KidsHome}/>
             <Route path ='/schedule' exact component = {Schedule}/>
-            <Route path ='/contact' exact component = {Contact}/>
           </Switch>
         </Layout>
       </Router>
